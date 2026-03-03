@@ -30,7 +30,7 @@ jobs:
         run: npm install --no-audit --no-fund
 
       - name: Build dist
-        run: npx gulp
+        run: npx gulp dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
