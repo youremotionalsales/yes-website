@@ -1,0 +1,42 @@
+<!-- Top gradient glow -->
+<div class="yes-glow"></div>
+
+<!-- NAVBAR -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top yes-navbar">
+	<div class="container">
+		<a class="navbar-brand d-flex align-items-center gap-2" href="/index.html#top">
+			<span class="yes-mark"></span>
+			<span class="fw-semibold">YES</span>
+			<span class="opacity-75 d-none d-sm-inline">Your Emotional Sales</span>
+		</a>
+
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Apri menu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navLinks">
+			<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+				<li class="nav-item">
+					<a class="nav-link @@if(context.active=='chi-siamo'){active}" href="/chi-siamo.html">Chi siamo</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link @@if(context.active=='soluzioni'){active}" href="/soluzioni.html">Soluzioni</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link @@if(context.active=='future-lab'){active}" href="/future-lab.html">Future Lab</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link @@if(context.active=='contatti'){active}" href="/contatti.html">Contatti</a>
+				</li>
+				<li class="nav-item ms-lg-2">
+					<a class="btn btn-sm btn-yes-primary @@if(context.active=='contatti'){active}" href="/contatti.html">
+						Parliamone <i class="fa-solid fa-arrow-right-long"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- TOP ANCHOR -->
+<div id="top"></div>

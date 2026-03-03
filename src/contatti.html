@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="it">
+@@include('partials/head.html', { "title": "Contatti — YES", "description": "Contatta YES: demo, analisi o percorso." })
+<body>
+
+@@include('partials/header.html', { "active": "contatti" })
+
+<section class="yes-section yes-section--alt">
+	<div class="container">
+		<div class="row g-4 align-items-start">
+			<div class="col-lg-5">
+				<h1 class="h1 fw-bold mb-3">Contatti</h1>
+				<p class="text-secondary mb-3">
+					Raccontaci cosa devi costruire (o sbloccare).
+					Ti rispondiamo con una proposta concreta: demo, analisi o percorso.
+				</p>
+
+				<div class="yes-card">
+					<div class="d-flex gap-3">
+						<div class="yes-icon yes-icon--soft"><i class="fa-solid fa-envelope"></i></div>
+						<div>
+							<div class="fw-semibold">Email</div>
+							<div class="text-secondary">hello@youremotionalsales.it</div>
+						</div>
+					</div>
+					<hr class="yes-divider my-3" />
+					<div class="d-flex gap-3">
+						<div class="yes-icon yes-icon--soft"><i class="fa-solid fa-location-dot"></i></div>
+						<div>
+							<div class="fw-semibold">Base</div>
+							<div class="text-secondary">Milano • Italia</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-7">
+				<div class="yes-card">
+					<form id="contactForm" novalidate>
+						<div class="row g-3">
+							<div class="col-md-6">
+								<label class="form-label" for="name">Nome</label>
+								<input class="form-control" id="name" name="name" type="text" placeholder="Nome e cognome" required />
+								<div class="invalid-feedback">Inserisci il tuo nome.</div>
+							</div>
+							<div class="col-md-6">
+								<label class="form-label" for="email">Email</label>
+								<input class="form-control" id="email" name="email" type="email" placeholder="nome@azienda.it" required />
+								<div class="invalid-feedback">Inserisci un’email valida.</div>
+							</div>
+							<div class="col-md-6">
+								<label class="form-label" for="company">Azienda (opzionale)</label>
+								<input class="form-control" id="company" name="company" type="text" placeholder="Nome azienda" />
+							</div>
+							<div class="col-md-6">
+								<label class="form-label" for="topic">Tema</label>
+								<select class="form-select" id="topic" name="topic" required>
+									<option value="" selected>Seleziona...</option>
+									<option>YES Compliance</option>
+									<option>The Circuit</option>
+									<option>Consulenza / Delivery</option>
+									<option>Altro (Future Lab)</option>
+								</select>
+								<div class="invalid-feedback">Seleziona un tema.</div>
+							</div>
+							<div class="col-12">
+								<label class="form-label" for="message">Messaggio</label>
+								<textarea class="form-control" id="message" name="message" rows="5" placeholder="Descrivi obiettivo, contesto, vincoli e tempi." required></textarea>
+								<div class="invalid-feedback">Scrivi un messaggio.</div>
+							</div>
+
+							<div class="col-12 d-flex flex-wrap gap-2 align-items-center">
+								<button class="btn btn-yes-primary btn-lg" type="submit">
+									Invia <i class="fa-solid fa-paper-plane"></i>
+								</button>
+								<a class="btn btn-yes-outline btn-lg" id="mailtoFallback" href="#">
+									Apri email <i class="fa-regular fa-envelope-open"></i>
+								</a>
+
+								<span id="formStatus" class="ms-lg-2 small text-secondary"></span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+@@include('partials/footer.html')
+@@include('partials/scripts.html')
+
+</body>
+</html>

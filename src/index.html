@@ -1,488 +1,147 @@
 <!doctype html>
 <html lang="it">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Your Emotional Sales (YES) — Lab, SaaS, Systems</title>
-	<meta name="description" content="YES è un incubatore di idee e una software house: SaaS, servizi e sistemi digitali scalabili. YES Compliance e The Circuit." />
+@@include('partials/head.html', { "title": "Your Emotional Sales (YES) — Lab, SaaS, Systems", "description": "YES è un incubatore di idee e una software house: SaaS, servizi e sistemi digitali scalabili. YES Compliance e The Circuit." })
+<body>
 
-	<!-- Main -->
-	<link rel="stylesheet" href="/css/main.css" />
-</head>
+@@include('partials/header.html', { "active": "home" })
 
-<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="90" tabindex="0">
+<header class="yes-hero">
+	<div class="container">
+		<div class="row align-items-center g-4">
+			<div class="col-lg-7">
+				<div class="yes-pill mb-3">
+					<i class="fa-solid fa-wand-magic-sparkles me-2"></i>
+					Incubatore di idee • Software house • Sistemi scalabili
+				</div>
 
-	<!-- Top gradient glow -->
-	<div class="yes-glow"></div>
+				<h1 class="display-5 fw-bold mb-3">
+					Costruiamo sistemi digitali che trasformano complessità in valore.
+				</h1>
 
-	<!-- NAVBAR -->
-	<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top yes-navbar">
-		<div class="container">
-			<a class="navbar-brand d-flex align-items-center gap-2" href="#top">
-				<span class="yes-mark"></span>
-				<span class="fw-semibold">YES</span>
-				<span class="opacity-75 d-none d-sm-inline">Your Emotional Sales</span>
-			</a>
+				<p class="lead text-secondary mb-4">
+					Your Emotional Sales (YES) è un laboratorio permanente: analizziamo tensioni reali del mercato
+					e le trasformiamo in prodotti SaaS e servizi che abilitano fiducia, governance e crescita.
+				</p>
 
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Apri menu">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+				<div class="d-flex flex-wrap gap-2">
+					<a class="btn btn-yes-primary btn-lg" href="/soluzioni.html">
+						Scopri YES <i class="fa-solid fa-arrow-right-long"></i>
+					</a>
+					<a class="btn btn-yes-outline btn-lg" href="/contatti.html">
+						Contattaci <i class="fa-regular fa-comment-dots"></i>
+					</a>
+				</div>
 
-			<div class="collapse navbar-collapse" id="navLinks">
-				<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-					<li class="nav-item"><a class="nav-link" href="#about">Chi siamo</a></li>
-					<li class="nav-item"><a class="nav-link" href="#solutions">Soluzioni</a></li>
-					<li class="nav-item"><a class="nav-link" href="#future">Future Lab</a></li>
-					<li class="nav-item"><a class="nav-link" href="#contact">Contatti</a></li>
-					<li class="nav-item ms-lg-2">
-						<a class="btn btn-sm btn-yes-primary" href="#contact">
-							Parliamone <i class="fa-solid fa-arrow-right-long"></i>
-						</a>
-					</li>
-				</ul>
+				<div class="yes-metrics mt-4">
+					<div class="yes-metric">
+						<div class="yes-metric__n">SaaS</div>
+						<div class="yes-metric__l">prodotti verticali</div>
+					</div>
+					<div class="yes-metric">
+						<div class="yes-metric__n">Service</div>
+						<div class="yes-metric__l">ecosistemi e delivery</div>
+					</div>
+					<div class="yes-metric">
+						<div class="yes-metric__n">Lab</div>
+						<div class="yes-metric__l">nuove idee in incubazione</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</nav>
 
-	<!-- TOP ANCHOR -->
-	<div id="top"></div>
-
-	<!-- HERO -->
-	<header class="yes-hero">
-		<div class="container">
-			<div class="row align-items-center g-4">
-				<div class="col-lg-7">
-					<div class="yes-pill mb-3">
-						<i class="fa-solid fa-wand-magic-sparkles me-2"></i>
-						Incubatore di idee • Software house • Sistemi scalabili
-					</div>
-
-					<h1 class="display-5 fw-bold mb-3">
-						Costruiamo sistemi digitali che trasformano complessità in valore.
-					</h1>
-
-					<p class="lead text-secondary mb-4">
-						Your Emotional Sales (YES) è un laboratorio permanente: analizziamo tensioni reali del mercato
-						e le trasformiamo in prodotti SaaS e servizi che abilitano fiducia, governance e crescita.
-					</p>
-
-					<div class="d-flex flex-wrap gap-2">
-						<a class="btn btn-yes-primary btn-lg" href="#solutions">
-							Scopri YES <i class="fa-solid fa-arrow-down"></i>
-						</a>
-						<a class="btn btn-yes-outline btn-lg" href="#contact">
-							Contattaci <i class="fa-regular fa-comment-dots"></i>
-						</a>
-					</div>
-
-					<div class="yes-metrics mt-4">
-						<div class="yes-metric">
-							<div class="yes-metric__n">SaaS</div>
-							<div class="yes-metric__l">prodotti verticali</div>
-						</div>
-						<div class="yes-metric">
-							<div class="yes-metric__n">Service</div>
-							<div class="yes-metric__l">ecosistemi e delivery</div>
-						</div>
-						<div class="yes-metric">
-							<div class="yes-metric__n">Lab</div>
-							<div class="yes-metric__l">nuove idee in incubazione</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-5">
-					<div class="yes-card yes-hero-card">
-						<div class="d-flex align-items-start justify-content-between gap-3">
-							<div>
-								<div class="yes-card__kicker">Oggi</div>
-								<h2 class="h4 fw-semibold mb-2">Due linee, una visione</h2>
-								<p class="text-secondary mb-0">
-									Compliance e Community: due estremi che convergono nella stessa cosa —
-									fiducia, processi, relazione.
-								</p>
-							</div>
-							<div class="yes-badge">
-								<i class="fa-solid fa-shield-heart"></i>
-							</div>
-						</div>
-
-						<hr class="yes-divider my-4" />
-
-						<div class="d-grid gap-2">
-							<a href="#solutions" class="btn btn-sm btn-yes-soft">
-								<i class="fa-solid fa-table-columns me-2"></i>YES Compliance & The Circuit
-							</a>
-							<a href="#future" class="btn btn-sm btn-yes-soft">
-								<i class="fa-solid fa-lightbulb me-2"></i>Il nostro Future Lab
-							</a>
-							<a href="#contact" class="btn btn-sm btn-yes-soft">
-								<i class="fa-regular fa-envelope me-2"></i>Scrivici
-							</a>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</header>
-
-	<!-- ABOUT -->
-	<section id="about" class="yes-section">
-		<div class="container">
-			<div class="row g-4 align-items-start">
-				<div class="col-lg-5">
-					<h2 class="h1 fw-bold mb-3">Chi è YES</h2>
-					<p class="text-secondary mb-0">
-						YES non è una “azienda con un prodotto”.
-						È una struttura pensata per far nascere soluzioni: osserviamo frizioni, vincoli e opportunità,
-						poi costruiamo sistemi digitali che reggono nel tempo.
-					</p>
-				</div>
-
-				<div class="col-lg-7">
-					<div class="row g-3">
-						<div class="col-md-6">
-							<div class="yes-card h-100">
-								<div class="yes-icon"><i class="fa-solid fa-diagram-project"></i></div>
-								<h3 class="h5 fw-semibold mt-3">Sistemi, non “app”</h3>
-								<p class="text-secondary mb-0">
-									Architetture pulite, processi chiari, dati coerenti.
-									La tecnologia è un mezzo: il risultato è un modello replicabile.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="yes-card h-100">
-								<div class="yes-icon"><i class="fa-solid fa-gears"></i></div>
-								<h3 class="h5 fw-semibold mt-3">Rigorosi, pragmatici</h3>
-								<p class="text-secondary mb-0">
-									Quando serve: consulenza e delivery.
-									Quando ha senso: prodotto SaaS.
-									Sempre: responsabilità e qualità.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="yes-card h-100">
-								<div class="yes-icon"><i class="fa-solid fa-shield-halved"></i></div>
-								<h3 class="h5 fw-semibold mt-3">Fiducia e governance</h3>
-								<p class="text-secondary mb-0">
-									Compliance, sicurezza, trasparenza.
-									Non solo adempimento: cultura aziendale.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="yes-card h-100">
-								<div class="yes-icon"><i class="fa-solid fa-people-group"></i></div>
-								<h3 class="h5 fw-semibold mt-3">Relazioni che creano valore</h3>
-								<p class="text-secondary mb-0">
-									Community ed engagement come leve reali:
-									non “marketing”, ma infrastruttura relazionale.
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="yes-quote mt-3">
-						<div class="yes-quote__mark">“</div>
+			<div class="col-lg-5">
+				<div class="yes-card yes-hero-card">
+					<div class="d-flex align-items-start justify-content-between gap-3">
 						<div>
-							<div class="fw-semibold">La tecnologia serve quando cambia davvero il comportamento.</div>
-							<div class="text-secondary">YES progetta sistemi che rendono possibile fidarsi — dentro e fuori l’azienda.</div>
+							<div class="yes-card__kicker">Oggi</div>
+							<h2 class="h4 fw-semibold mb-2">Due linee, una visione</h2>
+							<p class="text-secondary mb-0">
+								Compliance e Community: due estremi che convergono nella stessa cosa —
+								fiducia, processi, relazione.
+							</p>
+						</div>
+						<div class="yes-badge">
+							<i class="fa-solid fa-shield-heart"></i>
 						</div>
 					</div>
 
+					<hr class="yes-divider my-4" />
+
+					<div class="d-grid gap-2">
+						<a href="/soluzioni.html" class="btn btn-sm btn-yes-soft">
+							<i class="fa-solid fa-table-columns me-2"></i>YES Compliance & The Circuit
+						</a>
+						<a href="/future-lab.html" class="btn btn-sm btn-yes-soft">
+							<i class="fa-solid fa-lightbulb me-2"></i>Il nostro Future Lab
+						</a>
+						<a href="/contatti.html" class="btn btn-sm btn-yes-soft">
+							<i class="fa-regular fa-envelope me-2"></i>Scrivici
+						</a>
+					</div>
 				</div>
 			</div>
+
 		</div>
-	</section>
+	</div>
+</header>
 
-	<!-- SOLUTIONS -->
-	<section id="solutions" class="yes-section yes-section--alt">
-		<div class="container">
-			<div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
-				<div>
-					<h2 class="h1 fw-bold mb-1">Soluzioni</h2>
-					<p class="text-secondary mb-0">Un prodotto SaaS e un servizio ecosistemico, oggi. Un laboratorio generativo, sempre.</p>
-				</div>
-				<a class="btn btn-yes-outline" href="#contact">
-					Richiedi info <i class="fa-solid fa-arrow-right-long"></i>
-				</a>
+<section class="yes-section">
+	<div class="container">
+		<div class="row g-4 align-items-start">
+			<div class="col-lg-5">
+				<h2 class="h1 fw-bold mb-3">Cosa facciamo</h2>
+				<p class="text-secondary mb-0">
+					YES nasce per trasformare frizioni operative in sistemi digitali: dove serve governance,
+					trasparenza, automazione e crescita sostenibile.
+				</p>
 			</div>
 
-			<div class="row g-3">
-				<!-- YES Compliance -->
-				<div class="col-lg-6">
-					<div class="yes-card yes-solution h-100">
-						<div class="d-flex align-items-start justify-content-between gap-3">
-							<div>
-								<div class="yes-card__kicker">SaaS</div>
-								<h3 class="h4 fw-semibold mb-2">YES Compliance</h3>
-								<p class="text-secondary mb-3">
-									Prodotto completamente SaaS per la gestione dei canali e dei processi di whistleblowing:
-									sicuro, tracciabile, conforme.
-								</p>
-							</div>
-							<div class="yes-solution__badge">
-								<i class="fa-solid fa-shield-heart"></i>
-							</div>
-						</div>
-
-						<div class="row g-2">
-							<div class="col-sm-6">
-								<div class="yes-feature"><i class="fa-solid fa-lock"></i> Canale sicuro e riservato</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="yes-feature"><i class="fa-solid fa-clipboard-check"></i> Workflow e auditabilità</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="yes-feature"><i class="fa-solid fa-sitemap"></i> Ruoli e segregazione</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="yes-feature"><i class="fa-solid fa-cloud"></i> SaaS pronto all’uso</div>
-							</div>
-						</div>
-
-						<div class="mt-4 d-flex flex-wrap gap-2">
-							<a class="btn btn-yes-primary" href="#contact" data-subject="YES Compliance">
-								Richiedi una demo <i class="fa-regular fa-circle-play"></i>
-							</a>
-							<a class="btn btn-yes-soft" href="#contact" data-subject="YES Compliance">
-								Parliamo di requisiti <i class="fa-solid fa-sliders"></i>
-							</a>
-						</div>
+			<div class="col-lg-7">
+				<div class="row g-3">
+					<div class="col-md-6">
+						<a class="yes-card h-100 d-block text-decoration-none" href="/chi-siamo.html">
+							<div class="yes-icon"><i class="fa-solid fa-diagram-project"></i></div>
+							<h3 class="h5 fw-semibold mt-3">Chi siamo</h3>
+							<p class="text-secondary mb-0">Visione, metodo e principi di progettazione di YES.</p>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a class="yes-card h-100 d-block text-decoration-none" href="/soluzioni.html">
+							<div class="yes-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+							<h3 class="h5 fw-semibold mt-3">Soluzioni</h3>
+							<p class="text-secondary mb-0">YES Compliance e The Circuit: SaaS e servizi.</p>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a class="yes-card h-100 d-block text-decoration-none" href="/future-lab.html">
+							<div class="yes-icon"><i class="fa-solid fa-lightbulb"></i></div>
+							<h3 class="h5 fw-semibold mt-3">Future Lab</h3>
+							<p class="text-secondary mb-0">Osservazione → prototipo → sistema scalabile.</p>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a class="yes-card h-100 d-block text-decoration-none" href="/contatti.html">
+							<div class="yes-icon"><i class="fa-solid fa-paper-plane"></i></div>
+							<h3 class="h5 fw-semibold mt-3">Contatti</h3>
+							<p class="text-secondary mb-0">Demo, analisi o percorso: scrivici.</p>
+						</a>
 					</div>
 				</div>
 
-				<!-- The Circuit -->
-				<div class="col-lg-6">
-					<div class="yes-card yes-solution h-100">
-						<div class="d-flex align-items-start justify-content-between gap-3">
-							<div>
-								<div class="yes-card__kicker">Service</div>
-								<h3 class="h4 fw-semibold mb-2">The Circuit</h3>
-								<p class="text-secondary mb-3">
-									Servizio / ecosistema: un “circuito” dove interazione, community e valore si alimentano a vicenda,
-									con delivery e sviluppo continuo.
-								</p>
-							</div>
-							<div class="yes-solution__badge">
-								<i class="fa-solid fa-infinity"></i>
-							</div>
-						</div>
-
-						<div class="row g-2">
-							<div class="col-sm-6">
-								<div class="yes-feature"><i class="fa-solid fa-people-group"></i> Community & engagement</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="yes-feature"><i class="fa-solid fa-chart-line"></i> Modello data-driven</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="yes-feature"><i class="fa-solid fa-cubes"></i> Ecosistema modulare</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="yes-feature"><i class="fa-solid fa-screwdriver-wrench"></i> Delivery + evoluzione</div>
-							</div>
-						</div>
-
-						<div class="mt-4 d-flex flex-wrap gap-2">
-							<a class="btn btn-yes-primary" href="#contact" data-subject="The Circuit">
-								Richiedi overview <i class="fa-regular fa-file-lines"></i>
-							</a>
-							<a class="btn btn-yes-soft" href="#contact" data-subject="The Circuit">
-								Parliamo di partnership <i class="fa-regular fa-handshake"></i>
-							</a>
-						</div>
+				<div class="yes-quote mt-3">
+					<div class="yes-quote__mark">“</div>
+					<div>
+						<div class="fw-semibold">La tecnologia serve quando cambia davvero il comportamento.</div>
+						<div class="text-secondary">YES progetta sistemi che rendono possibile fidarsi — dentro e fuori l’azienda.</div>
 					</div>
 				</div>
 
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
-	<!-- FUTURE -->
-	<section id="future" class="yes-section">
-		<div class="container">
-			<div class="row g-4 align-items-start">
-				<div class="col-lg-5">
-					<h2 class="h1 fw-bold mb-3">Future Lab</h2>
-					<p class="text-secondary mb-0">
-						YES è progettata per generare nuove soluzioni.
-						Quando nasce una nuova normativa, una nuova frizione operativa o un’opportunità di mercato,
-						il laboratorio si attiva: analisi → prototipo → sistema scalabile.
-					</p>
+@@include('partials/footer.html')
+@@include('partials/scripts.html')
 
-					<div class="mt-4">
-						<div class="yes-pill">
-							<i class="fa-solid fa-bolt me-2"></i>
-							Oggi: Compliance & Ecosistemi. Domani: ciò che serve davvero.
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-7">
-					<div class="yes-card">
-						<div class="row g-3">
-							<div class="col-md-6">
-								<div class="yes-mini">
-									<div class="yes-mini__i"><i class="fa-solid fa-compass"></i></div>
-									<div>
-										<div class="fw-semibold">Osservazione</div>
-										<div class="text-secondary small">Tensioni reali, non “feature list”.</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="yes-mini">
-									<div class="yes-mini__i"><i class="fa-solid fa-bezier-curve"></i></div>
-									<div>
-										<div class="fw-semibold">Progettazione</div>
-										<div class="text-secondary small">Regole, processi, dati, UX.</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="yes-mini">
-									<div class="yes-mini__i"><i class="fa-solid fa-microchip"></i></div>
-									<div>
-										<div class="fw-semibold">Costruzione</div>
-										<div class="text-secondary small">Architettura pulita, scalabilità, sicurezza.</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="yes-mini">
-									<div class="yes-mini__i"><i class="fa-solid fa-rocket"></i></div>
-									<div>
-										<div class="fw-semibold">Rilascio</div>
-										<div class="text-secondary small">Prodotto o servizio: quello che ha senso.</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<hr class="yes-divider my-4" />
-
-						<div class="d-flex flex-wrap gap-2 align-items-center">
-							<span class="badge text-bg-light yes-tag"><i class="fa-solid fa-shield-halved me-1"></i>Compliance</span>
-							<span class="badge text-bg-light yes-tag"><i class="fa-solid fa-people-group me-1"></i>Community</span>
-							<span class="badge text-bg-light yes-tag"><i class="fa-solid fa-database me-1"></i>Data</span>
-							<span class="badge text-bg-light yes-tag"><i class="fa-solid fa-gear me-1"></i>Automation</span>
-							<span class="badge text-bg-light yes-tag"><i class="fa-solid fa-link me-1"></i>Integrations</span>
-							<span class="badge text-bg-light yes-tag"><i class="fa-solid fa-cubes-stacked me-1"></i>Systems</span>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- CONTACT -->
-	<section id="contact" class="yes-section yes-section--alt">
-		<div class="container">
-			<div class="row g-4 align-items-start">
-				<div class="col-lg-5">
-					<h2 class="h1 fw-bold mb-3">Contatti</h2>
-					<p class="text-secondary mb-3">
-						Raccontaci cosa devi costruire (o sbloccare).
-						Ti rispondiamo con una proposta concreta: demo, analisi o percorso.
-					</p>
-
-					<div class="yes-card">
-						<div class="d-flex gap-3">
-							<div class="yes-icon yes-icon--soft"><i class="fa-solid fa-envelope"></i></div>
-							<div>
-								<div class="fw-semibold">Email</div>
-								<div class="text-secondary">hello@youremotionalsales.it</div>
-							</div>
-						</div>
-						<hr class="yes-divider my-3" />
-						<div class="d-flex gap-3">
-							<div class="yes-icon yes-icon--soft"><i class="fa-solid fa-location-dot"></i></div>
-							<div>
-								<div class="fw-semibold">Base</div>
-								<div class="text-secondary">Milano • Italia</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-7">
-					<div class="yes-card">
-						<form id="contactForm" novalidate>
-							<div class="row g-3">
-								<div class="col-md-6">
-									<label class="form-label" for="name">Nome</label>
-									<input class="form-control" id="name" name="name" type="text" placeholder="Nome e cognome" required />
-									<div class="invalid-feedback">Inserisci il tuo nome.</div>
-								</div>
-								<div class="col-md-6">
-									<label class="form-label" for="email">Email</label>
-									<input class="form-control" id="email" name="email" type="email" placeholder="nome@azienda.it" required />
-									<div class="invalid-feedback">Inserisci un’email valida.</div>
-								</div>
-								<div class="col-md-6">
-									<label class="form-label" for="company">Azienda (opzionale)</label>
-									<input class="form-control" id="company" name="company" type="text" placeholder="Nome azienda" />
-								</div>
-								<div class="col-md-6">
-									<label class="form-label" for="topic">Tema</label>
-									<select class="form-select" id="topic" name="topic" required>
-										<option value="" selected>Seleziona...</option>
-										<option>YES Compliance</option>
-										<option>The Circuit</option>
-										<option>Consulenza / Delivery</option>
-										<option>Altro (Future Lab)</option>
-									</select>
-									<div class="invalid-feedback">Seleziona un tema.</div>
-								</div>
-								<div class="col-12">
-									<label class="form-label" for="message">Messaggio</label>
-									<textarea class="form-control" id="message" name="message" rows="5" placeholder="Descrivi obiettivo, contesto, vincoli e tempi." required></textarea>
-									<div class="invalid-feedback">Scrivi un messaggio.</div>
-								</div>
-
-								<div class="col-12 d-flex flex-wrap gap-2 align-items-center">
-									<button class="btn btn-yes-primary btn-lg" type="submit">
-										Invia <i class="fa-solid fa-paper-plane"></i>
-									</button>
-									<a class="btn btn-yes-outline btn-lg" id="mailtoFallback" href="#">
-										Apri email <i class="fa-regular fa-envelope-open"></i>
-									</a>
-
-									<span id="formStatus" class="ms-lg-2 small text-secondary"></span>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<!-- FOOTER -->
-	<footer class="yes-footer">
-		<div class="container">
-			<div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
-				<div class="text-secondary small">
-					© <span id="year"></span> Your Emotional Sales S.r.l. — All rights reserved.
-				</div>
-				<div class="d-flex gap-3 small">
-					<a class="yes-footer__link" href="#top">Torna su</a>
-					<a class="yes-footer__link" href="#contact">Contatti</a>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<!-- Vendors -->
-	<script src="/js/vendors.js"></script>
-
-	<!-- Main -->
-	<script src="/js/main.js"></script>
 </body>
 </html>
