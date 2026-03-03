@@ -65,4 +65,10 @@ const bundleHtml = () =>
 
 exports.bundleHtml = bundleHtml
 
-exports.default = series(bundleCss, bundleVendorsJs, bundleJs, bundleWebfonts, bundleHtml);
+const bundleFavicon = () =>
+	src('src/favicon.ico')
+    .pipe(dest('dist/'));
+
+exports.bundleHtml = bundleHtml
+
+exports.default = series(bundleCss, bundleVendorsJs, bundleJs, bundleWebfonts, bundleHtml, bundleFavicon);
