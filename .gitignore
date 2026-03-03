@@ -1,0 +1,18 @@
+# ==============================================
+# Node / Frontend Builds / Build sources
+# ==============================================
+dist/
+node_modules/
+package-lock.json
+
+# ==============================================
+# IDE / Editor / OS-specific
+# ==============================================
+.DS_Store
+Thumbs.db
+
+.idea/
+.vscode/
+
+*.swp
+*.swo
