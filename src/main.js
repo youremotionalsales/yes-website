@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			data.message
 		];
 		const body = lines.join('\n');
-		return `mailto:hello@youremotionalsales.it?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+		return `mailto:sales@youremotionalsales.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 	};
 
 	const applySubjectFromButtons = () => {
